@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'akiraEx';
+    src: url(akira_expanded/AkiraExpandedDemo.ttf);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --text: #fafafa;
+    --background: #2a2929;
+    --primary: #a0a5ae;
+    --secondary: #860f0f;
+    --accent: #ff666e;
+}
+
+a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+a:visited {
+    opacity: .1;
+}
+
+a:hover, a:focus {
+    opacity: .75;
+    color: var(--accent);
+}
+
+body {
+    padding: 1em 0;
+    font-family: 'akiraEx', sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+img {
+    width: 100%;
+}
+
+.logo {
+    padding-left: 1em;
+}
+
+.container {
+    width: 100%;
+}
+
+.flex-class {
+    display: flex;
+}
+
+.nav-list {
+    list-style: none;
+    justify-content: space-around;
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+.media-scroller {
+    padding: 5em 0 6em;
+    
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 65%;
+    gap: 1em;
+
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+}
+
+.snaps-inline {
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: 1rem;
+}
+
+.snaps-inline > * {
+    scroll-snap-align: center;
+}
+
+.media-element {
+    display: grid;
+    gap: 1em;
+    grid-template-rows: min-content;
+    padding: 1em;
+    border-radius: 10%;
+    background-color: var(--primary);
+}
+
+.media-element > img {
+    inline-size: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 10%;
+    object-fit: cover;
+}
+
+.call-to-action {
+    padding: .75em 1em;
+    text-align: center;
+    background-color: var(--secondary);
+    border-radius: 100px;
+}
+
+.footer {
+    opacity: .1;
+    font-size: .75rem;
+    text-align: center;
+}
