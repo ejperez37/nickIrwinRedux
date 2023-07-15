@@ -31,6 +31,7 @@ a:hover, a:focus {
 
 body {
     padding: 1em 0;
+    margin: .5rem .5rem 0 .5rem;
     font-family: 'akiraEx', sans-serif;
     background-color: var(--background);
     color: var(--text);
@@ -62,11 +63,12 @@ img {
 }
 
 .media-scroller {
-    padding: 5em 0 6em;
+    padding: 10em 0;
     
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 65%;
+    grid-template-rows: 100%;
     gap: 1em;
 
     overflow-x: auto;
@@ -83,9 +85,12 @@ img {
 }
 
 .media-element {
-    display: grid;
+    display: flex;
     gap: 1em;
-    grid-template-rows: min-content;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-block-size: 75%;
     padding: 1em;
     border-radius: 10%;
     background-color: var(--primary);
@@ -93,20 +98,31 @@ img {
 
 .media-element > img {
     inline-size: 100%;
+    block-size: 100%;
     aspect-ratio: 16 / 9;
     border-radius: 10%;
     object-fit: cover;
 }
 
 .call-to-action {
-    padding: .75em 1em;
-    text-align: center;
-    background-color: var(--secondary);
+    margin-inline: 5em;
+    padding: 1em;
+    background-color: var(--accent);
     border-radius: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer--container {
+    min-block-size: 30dvh;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer {
     opacity: .1;
     font-size: .75rem;
     text-align: center;
+    justify-content: end;
+    align-items: center;
 }
