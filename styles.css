@@ -126,6 +126,10 @@ img {
     object-fit: cover;
 }
 
+.media-element > a {
+    padding: 1em;
+}
+
 .call-to-action {
     margin-inline: 15%;
     padding: 1em;
@@ -156,12 +160,6 @@ img {
     align-items: center;
 }
 
-/* @media (min-width: 400px) {
-    .logo {
-        height: 100%;
-    }
-} */
-
 @media (min-width: 800px) {
     .nav-list {
         justify-content: flex-end;
@@ -169,5 +167,9 @@ img {
 
     .nav-item + .nav-item {
         margin-left: 3em;
+    }
+
+    .call-to-action {
+        margin-inline: 25%;
     }
 }
