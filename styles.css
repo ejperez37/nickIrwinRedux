@@ -125,6 +125,11 @@ hr {
     margin-block-end: 3em;
 }
 
+.centered {
+    justify-content: center;
+    align-items: center;
+}
+
 .text-element > h2 {
     text-align: inline-start;
     padding-inline-start: 0;
@@ -135,7 +140,7 @@ hr {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 1em;
+    padding: 1em 1em .5em;
     margin: .5em;
     border-radius: 10%;
     background-color: var(--text);
