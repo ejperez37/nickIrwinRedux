@@ -228,6 +228,11 @@ hr {
         margin-inline: 25%;
         padding-inline: 2em;
     }
+
+    .size-control{
+        max-inline-size: 65%;
+        margin-inline-start: 17%;
+    }
 }
 
 @media (min-width: 750px) {
@@ -248,5 +253,10 @@ hr {
 @media (min-width: 1200px) {
     .nav-list {
         margin-block-start: 2.75em;
+    }
+
+    .size-control {
+        max-inline-size: 50%;
+        margin-inline-start: 25%;
     }
 }
